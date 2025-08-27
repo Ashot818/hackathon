@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-CarStore.Web-5638df1f-9806-4608-a412-533087abc374</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.13.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0" />
+    <PackageReference Include="MimeKit" Version="4.13.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarStore.Data\CityLens.Data.csproj" />
+    <ProjectReference Include="..\CarStore.Services\CityLens.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\cars\" />
+  </ItemGroup>
+
+</Project>

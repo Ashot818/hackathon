@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityLens.Web", "CarStore.Web\CityLens.Web.csproj", "{F8CE6EF5-7CBD-4331-B22C-C2340DA50B65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityLens.Data", "CarStore.Data\CityLens.Data.csproj", "{043D3E14-7475-4A3B-A7D4-0E88546D5310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityLens.Services", "CarStore.Services\CityLens.Services.csproj", "{F6763897-95F4-481F-A0F7-EFFE47889B3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8CE6EF5-7CBD-4331-B22C-C2340DA50B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CE6EF5-7CBD-4331-B22C-C2340DA50B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CE6EF5-7CBD-4331-B22C-C2340DA50B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CE6EF5-7CBD-4331-B22C-C2340DA50B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{043D3E14-7475-4A3B-A7D4-0E88546D5310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{043D3E14-7475-4A3B-A7D4-0E88546D5310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{043D3E14-7475-4A3B-A7D4-0E88546D5310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043D3E14-7475-4A3B-A7D4-0E88546D5310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6763897-95F4-481F-A0F7-EFFE47889B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6763897-95F4-481F-A0F7-EFFE47889B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6763897-95F4-481F-A0F7-EFFE47889B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6763897-95F4-481F-A0F7-EFFE47889B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

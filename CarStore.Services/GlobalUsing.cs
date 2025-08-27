@@ -1,0 +1,1 @@
+﻿global using CityLens.Data.Data.Entities;
