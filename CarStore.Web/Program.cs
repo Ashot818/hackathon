@@ -48,6 +48,17 @@ namespace CityLens.Web
                 c.SwaggerDoc("v1", new() { Title = "City Lens API", Version = "v1" });
             });
 
+            // ====== CORS ======
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5173") // <-- твой фронтенд
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+                });
+            });
+
             var app = builder.Build();
 
             // ====== HTTP Request Pipeline ======
@@ -81,6 +92,9 @@ namespace CityLens.Web
                 RequestPath = "/uploads"
             });
 
+            // ====== CORS Middleware (ВАЖНО до UseRouting) ======
+            app.UseCors("AllowFrontend");
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -89,7 +103,6 @@ namespace CityLens.Web
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
-
 
             app.MapRazorPages();
 
